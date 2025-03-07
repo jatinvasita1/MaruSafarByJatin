@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget-Friendly Travel Planner</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:hsl(26, 64%, 65%);
+        }
+        
+        .hero {
+            
+            padding: 100px;
+            text-align: center;
+        }
+        
+        .destinations {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #dddddd;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        
+        .accommodations {
+            background-color: #fbfbfb;
+            padding: 20px;
+            border: 1px solid #dddddd;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        
+        .itineraries {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #dddddd;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        
+        .modal-dialog {
+            max-width: 800px;
+        }
+        
+        .modal-body {
+            padding: 20px;
+        }
+        .form-text{
+            color: white;
+        }
+        #plan-trip-btn{
+            padding: 10px;
+        }
+        .container1{
+            padding-top: 30px;
+            /* margin: 10px; */
+        }
+        .B1{
+            /* padding : 5PX; */
+            margin: 5PX;
+        }
+    </style>
+</head>
+<body id="top">
+    
+
+<header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:+01123456790" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">For Further Inquires :</p>
+
+            <p class="helpline-number">+91 7877320021</p>
+          </div>
+
+        </a>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/LOGO1.png" alt="MARUSAFAR logo">
+
+        </a>
+
+        <div class="header-btn-group">
+
+          <button class="search-btn" aria-label="Search">
+            <ion-icon name="search"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/LOGO1.png" alt="MARU SAFAR">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>about us</a>
+            </li>
+
+            <li>
+              <a href="#destination" class="navbar-link" data-nav-link>destination</a>
+            </li>
+
+            <li>
+              <a href="#package" class="navbar-link" data-nav-link>packages</a>
+            </li>
+
+            <li>
+              <a href="#gallery" class="navbar-link" data-nav-link>gallery</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+            </li>
+
+          </ul>
+
+        </nav>
+        <a href="budget.html" class="btn btn-primary">Book Now</a>
+        
+        <!-- <button class="btn btn-primary">Book Now</button> -->
+
+      </div>
+    </div>
+
+  </header>
+
+
+    
+    <div class="hero">
+     
+        <div class="container1">
+            <div id="trip-planner" class="trip-planner">
+               >
+                <form>
+                    <div class="mb-3">
+                        <input type="number" class="form-control" id="budget" aria-describedby="budgetHelp" >
+                        <div id="budgetHelp" class="form-text">Enter your daily budget</div>
+                    </div>
+                    <div class="mb-3">
+                
+                        <input type="number" class="form-control" id="duration" aria-describedby="durationHelp">
+                        <div id="durationHelp" class="form-text">Enter the number of persons</div>
+                    </div>
+                    <button type="button" class="btn btn-primary B1" id="plan-trip-btn">Plan Trip</button>
+                </form>
+            </div>
+            
+            <div id="destinations" class="destinations">
+                <h2>Destinations</h2>
+                <div id="destination-list" class="row">
+                  
+                </div>
+            </div>
+            
+            <div id="accommodations" class="accommodations">
+                <h2>Accommodations</h2>
+                <div id="accommodation-list" class="row">
+                 
+                </div>
+            </div>
+            
+            <div id="itineraries" class="itineraries">
+                <h2>Itineraries</h2>
+                <div id="itinerary-list" class="row">
+                 
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="trip-planner-modal" tabindex="-1" aria-labelledby="trip-planner-modal-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="trip-planner-modal-label">Trip Planner</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="modal-budget" class="form-label">Budget:</label>
+                                <input type="number" class="form-control" id="modal-budget" aria-describedby="modal-budgetHelp">
+                                <div id="modal-budgetHelp" class="form-text">Enter your daily budget</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="modal-duration" class="form-label">Duration:</label>
+                                <input type="number" class="form-control" id="modal-duration" aria-describedby="modal-durationHelp">
+                                <div id="modal-durationHelp" class="form-text">Enter the number of persons</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="modal-destination" class="form-label">Destination:</label>
+                                <select class="form-select" id="modal-destination" aria-describedby="modal-destinationHelp">
+                                    <option value="">Select a destination</option>
+                                    <option value="jaipur">JAIPUR</option>
+                                    <option value="UDAIPUR">UDAIPUR</option>
+                                    <option value="JAISALMER">JAISALMER</option>
+                                </select>
+                                <div id="modal-destinationHelp" class="form-text">Select a destination</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="modal-accommodation" class="form-label">Accommodation:</label>
+                                <select class="form-select" id="modal-accommodation" aria-describedby="modal-accommodationHelp">
+                                    <option value="">Select an accommodation</option>
+                                    <option value="Hotel">Hotel</option>
+                                    <option value="Hostel">Hostel</option>
+                                    <option value="Airbnb">Airbnb</option>
+                                </select>
+                                <div id="modal-accommodationHelp" class="form-text">Select an accommodation</div>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="modal-plan-trip-btn">Plan Trip</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+    <footer class="footer">
+
+        <div class="footer-top">
+          <div class="container">
+    
+            <div class="footer-brand">
+    
+              <a href="#" class="logo">
+                <img src="./assets/images/LOGO1.png" alt="MARU SAFAR">
+              </a>
+    
+              <p class="footer-text">
+    
+              </p>
+    
+            </div>
+    
+            <div class="footer-contact">
+    
+              <h4 class="contact-title">Contact Us</h4>
+    
+              <p class="contact-text">
+                Feel free to contact and reach us !!
+              </p>
+    
+              <ul>
+    
+                <li class="contact-item">
+                  <ion-icon name="call-outline"></ion-icon>
+    
+                  <a href="tel:+01123456790" class="contact-link">+91 7877320021</a>
+                </li>
+    
+                <li class="contact-item">
+                  <ion-icon name="mail-outline"></ion-icon>
+    
+                  <a href="mailto:info.tourly.com" class="contact-link">info.MARUSAFAR.com</a>
+                </li>
+    
+                <li class="contact-item">
+                  <ion-icon name="location-outline"></ion-icon>
+    
+                  <address>MV HOSTEL</address>
+                </li>
+    
+              </ul>
+    
+            </div>
+    
+            <div class="footer-form">
+    
+              <p class="form-text">
+                Subscribe our newsletter for more update & news !!
+              </p>
+    
+              <form action="" class="form-wrapper">
+                <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+    
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </form>
+    
+            </div>
+    
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <div class="container">
+    
+            <p class="copyright">
+              &copy; 2025 <a href="">Binary Brains</a>. All rights reserved
+            </p>
+    
+            <ul class="footer-bottom-list">
+    
+              <li>
+                <a href="#" class="footer-bottom-link">Privacy Policy</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-bottom-link">Term & Condition</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-bottom-link">FAQ</a>
+              </li>
+    
+            </ul>
+    
+          </div>
+        </div>
+    
+      </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const budgetInput = document.getElementById('budget');
+        const durationInput = document.getElementById('duration');
+        const planTripBtn = document.getElementById('plan-trip-btn');
+        const destinationList = document.getElementById('destination-list');
+        const accommodationList = document.getElementById('accommodation-list');
+        const itineraryList = document.getElementById('itinerary-list');
+        const modalBudgetInput = document.getElementById('modal-budget');
+        const modalDurationInput = document.getElementById('modal-duration');
+        const modalDestinationSelect = document.getElementById('modal-destination');
+        const modalAccommodationSelect = document.getElementById('modal-accommodation');
+        const modalPlanTripBtn = document.getElementById('modal-plan-trip-btn');
+        
+        const destinations = [
+            { name: 'JAIPUR', price: 100,  },
+            { name: 'JODHPUR', price: 80, image: 'https://via.placeholder.com/150' },
+            { name: 'JAISALMER', price: 90, image: 'https://via.placeholder.com/150' }
+            
+        ];
+        const accommodations = [
+            { name: 'Hotel', price: 500 },
+            { name: 'Hostel', price: 200 },
+            { name: 'Guest House', price: 300 }
+        ];
+        const itineraries = [
+            { name: 'Day 1: Explore the city', price: 200 },
+            { name: 'Day 2: Visit the museum', price: 150 },
+            { name: 'Day 3: Go shopping', price: 300 }
+        ];
+        
+        planTripBtn.addEventListener('click', () => {
+            const budget = parseInt(budgetInput.value);
+            const duration = parseInt(durationInput.value);
+            
+            destinationList.innerHTML = '';
+            accommodationList.innerHTML = '';
+            itineraryList.innerHTML = '';
+            
+            destinations.forEach(destination => {
+                const col = document.createElement('div');
+                col.classList.add('col-md-4');
+                const card = document.createElement('div');
+                card.classList.add('card');
+                const img = document.createElement('img');
+                // img.src = destination.image;
+                // img.classList.add('card-img-top');
+                const cardBody = document.createElement('div');
+                cardBody.classList.add('card-body');
+                const cardTitle = document.createElement('h5');
+                cardTitle.classList.add('card-title');
+                cardTitle.textContent = destination.name;
+                const cardText = document.createElement('p');
+                cardText.classList.add('card-text');
+                cardText.textContent = `Price: ₹${destination.price}`;
+                cardBody.appendChild(cardTitle);
+                cardBody.appendChild(cardText);
+                card.appendChild(img);
+                card.appendChild(cardBody);
+                col.appendChild(card);
+                destinationList.appendChild(col);
+            });
+            
+            accommodations.forEach(accommodation => {
+                const col = document.createElement('div');
+                col.classList.add('col-md-4');
+                const card = document.createElement('div');
+                card.classList.add('card');
+                const cardBody = document.createElement('div');
+                cardBody.classList.add('card-body');
+                const cardTitle = document.createElement('h5');
+                cardTitle.classList.add('card-title');
+                cardTitle.textContent = accommodation.name;
+                const cardText = document.createElement('p');
+                cardText.classList.add('card-text');
+                cardText.textContent = `Price: ₹${accommodation.price}`;
+                cardBody.appendChild(cardTitle);
+                cardBody.appendChild(cardText);
+                card.appendChild(cardBody);
+                col.appendChild(card);
+                accommodationList.appendChild(col);
+            });
+            
+            itineraries.forEach(itinerary => {
+                const col = document.createElement('div');
+                col.classList.add('col-md-4');
+                const card = document.createElement('div');
+                card.classList.add('card');
+                const cardBody = document.createElement('div');
+                cardBody.classList.add('card-body');
+                const cardTitle = document.createElement('h5');
+                cardTitle.classList.add('card-title');
+                cardTitle.textContent = itinerary.name;
+                const cardText = document.createElement('p');
+                cardText.classList.add('card-text');
+                cardText.textContent = `Price: ₹${itinerary.price}`;
+                cardBody.appendChild(cardTitle);
+                cardBody.appendChild(cardText);
+                card.appendChild(cardBody);
+                col.appendChild(card);
+                itineraryList.appendChild(col);
+            });
+        });
+        
+        modalPlanTripBtn.addEventListener('click', () => {
+            const budget = parseInt(modalBudgetInput.value);
+            const duration = parseInt(modalDurationInput.value);
+            const destination = modalDestinationSelect.value;
+            const accommodation = modalAccommodationSelect.value;
+            
+            const tripCost = budget * duration;
+            const destinationPrice = destinations.find(dest => dest.name === destination).price;
+            const accommodationPrice = accommodations.find(accom => accom.name === accommodation).price;
+            const totalCost = tripCost + destinationPrice + accommodationPrice;
+            
+            alert(`Your total trip cost is: ₹{totalCost}`);
+        });
+    </script>
+</body>
+</html>
