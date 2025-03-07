@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Travel Planner</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .hero {
+            background-image: linear-gradient(to bottom, #f7f7f7, #ccc);
+            padding: 50px;
+            text-align: center;
+        }
+        .destinations {
+            padding: 50px;
+        }
+        .planning-tools {
+            padding: 50px;
+        }
+        /* .footer {
+            background-color: #e2882f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        } */
+    </style>
+</head>
+<header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:+01123456790" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">For Further Inquires :</p>
+
+            <p class="helpline-number">+91 7877320021</p>
+          </div>
+
+        </a>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/LOGO1.png" alt="MARUSAFAR logo">
+
+        </a>
+
+        <div class="header-btn-group">
+
+          <button class="search-btn" aria-label="Search">
+            <ion-icon name="search"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/LOGO1.png" alt="MARU SAFAR">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>about us</a>
+            </li>
+
+            <li>
+              <a href="#destination" class="navbar-link" data-nav-link>destination</a>
+            </li>
+
+            <li>
+              <a href="#package" class="navbar-link" data-nav-link>packages</a>
+            </li>
+
+            <li>
+              <a href="#gallery" class="navbar-link" data-nav-link>gallery</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+            </li>
+
+          </ul>
+
+        </nav>
+        <a href="budget.html" class="btn btn-primary">Book Now</a>
+
+
+      </div>
+    </div>
+
+  </header> <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:+01123456790" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">For Further Inquires :</p>
+
+            <p class="helpline-number">+91 7877320021</p>
+          </div>
+
+        </a>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/LOGO1.png" alt="MARUSAFAR logo">
+
+        </a>
+
+        <div class="header-btn-group">
+
+          <button class="search-btn" aria-label="Search">
+            <ion-icon name="search"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/LOGO1.png" alt="MARU SAFAR">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>about us</a>
+            </li>
+
+            <li>
+              <a href="#destination" class="navbar-link" data-nav-link>destination</a>
+            </li>
+
+            <li>
+              <a href="#package" class="navbar-link" data-nav-link>packages</a>
+            </li>
+
+            <li>
+              <a href="#gallery" class="navbar-link" data-nav-link>gallery</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
+            </li>
+
+          </ul>
+
+        </nav>
+        <a href="budget.html" class="btn btn-primary">Book Now</a>
+        
+        
+
+      </div>
+    </div>
+
+  </header>
+
+<body>
+   
+   
+    <div id="header" data-header></div>
+    <div class="hero">
+       
+        <button class="btn btn-primary" data-toggle="modal" data-target="#budgetModal">Start Planning</button>
+    </div>
+   
+    </div>
+    <!-- <div class="planning-tools" id="planning-tools">
+        <h2>Planning Tools</h2>
+        <p>Calculate your trip budget with our planning tools.</p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#transportationModal">Transportation Costs</button>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#accommodationModal">Accommodation Costs</button>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#foodModal">Food Costs</button>
+    </div> -->
+    <div class="modal fade" id="budgetModal" tabindex="-1" role="dialog" aria-labelledby="budgetModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="budgetModalLabel">Trip Budget Calculator</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <input type="text" class="form-control" id="destination" placeholder="Enter destination">
+                        </div>
+                        <div class="form-group">
+                            <label for="num-travelers">Number of Travelers</label>
+                            <input type="number" class="form-control" id="num-travelers" placeholder="Enter number of travelers">
+                        </div>
+                        <div class="form-group">
+                            <label for="trip-duration">Trip Duration (days)</label>
+                            <input type="number" class="form-control" id="trip-duration" placeholder="Enter trip duration">
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="calculateBudget()">Calculate Budget</button>
+                    </form>
+                    <p id="budget-result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="transportationModal" tabindex="-1" role="dialog" aria-labelledby="transportationModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="transportationModalLabel">Transportation Costs Calculator</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="distance">Distance (miles)</label>
+                            <input type="number" class="form-control" id="distance" placeholder="Enter distance">
+                        </div>
+                        <div class="form-group">
+                            <label for="fuel-efficiency">Fuel Efficiency (mpg)</label>
+                            <input type="number" class="form-control" id="fuel-efficiency" placeholder="Enter fuel efficiency">
+                        </div>
+                        <div class="form-group">
+                            <label for="fuel-cost">Fuel Cost (₹/liter)</label>
+                            <input type="number" class="form-control" id="fuel-cost" placeholder="Enter fuel cost">
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="calculateTransportationCosts()">Calculate Transportation Costs</button>
+                    </form>
+                    <p id="transportation-costs-result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="accommodationModal" tabindex="-1" role="dialog" aria-labelledby="accommodationModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="accommodationModalLabel">Accommodation Costs Calculator</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="num-nights">Number of Nights</label>
+                            <input type="number" class="form-control" id="num-nights" placeholder="Enter number of nights">
+                        </div>
+                        <div class="form-group">
+                            <label for="accommodation-cost">Accommodation Cost (₹/night)</label>
+                            <input type="number" class="form-control" id="accommodation-cost" placeholder="Enter accommodation cost">
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="calculateAccommodationCosts()">Calculate Accommodation Costs</button>
+                    </form>
+                    <p id="accommodation-costs-result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="foodModal" tabindex="-1" role="dialog" aria-labelledby="foodModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="foodModalLabel">Food Costs Calculator</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="food-cost">Food Cost (₹/meal)</label>
+                            <input type="number" class="form-control" id="food-cost" placeholder="Enter food cost">
+                        </div>
+                        <div class="form-group">
+                            <label for="num-meals">Number of Meals</label>
+                            <input type="number" class="form-control" id="num-meals" placeholder="Enter number of meals">
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="calculateFoodCosts()">Calculate Food Costs</button>
+                    </form>
+                    <p id="food-costs-result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+
+        <div class="footer-top">
+          <div class="container">
+    
+            <div class="footer-brand">
+    
+              <a href="#" class="logo">
+                <img src="./assets/images/LOGO1.png" alt="MARU SAFAR">
+              </a>
+    
+              <p class="footer-text">
+    
+              </p>
+    
+            </div>
+    
+            <div class="footer-contact">
+    
+              <h4 class="contact-title">Contact Us</h4>
+    
+              <p class="contact-text">
+                Feel free to contact and reach us !!
+              </p>
+    
+              <ul>
+    
+                <li class="contact-item">
+                  <ion-icon name="call-outline"></ion-icon>
+    
+                  <a href="tel:+01123456790" class="contact-link">+91 7877320021</a>
+                </li>
+    
+                <li class="contact-item">
+                  <ion-icon name="mail-outline"></ion-icon>
+    
+                  <a href="mailto:info.tourly.com" class="contact-link">info.MARUSAFAR.com</a>
+                </li>
+    
+                <li class="contact-item">
+                  <ion-icon name="location-outline"></ion-icon>
+    
+                  <address>MV HOSTEL</address>
+                </li>
+    
+              </ul>
+    
+            </div>
+    
+            <div class="footer-form">
+    
+              <p class="form-text">
+                Subscribe our newsletter for more update & news !!
+              </p>
+    
+              <form action="" class="form-wrapper">
+                <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+    
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </form>
+    
+            </div>
+    
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <div class="container">
+    
+            <p class="copyright">
+              &copy; 2025 <a href="">Binary Brains</a>. All rights reserved
+            </p>
+    
+            <ul class="footer-bottom-list">
+    
+              <li>
+                <a href="#" class="footer-bottom-link">Privacy Policy</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-bottom-link">Term & Condition</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-bottom-link">FAQ</a>
+              </li>
+    
+            </ul>
+    
+          </div>
+        </div>
+    
+      </footer>
+      <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        let destinations = [
+            {name: "Paris", description: "The city of love and romance", info: "Paris is the capital of France and is known for its stunning architecture, art museums, and romantic atmosphere."},
+            {name: "Rome", description: "The eternal city", info: "Rome is the capital of Italy and is known for its rich history, architecture, and delicious food."},
+            {name: "Tokyo", description: "The city of neon lights", info: "Tokyo is the capital of Japan and is known for its vibrant atmosphere, cutting-edge technology, and world-class cuisine."},
+        ];
+
+        function calculateBudget() {
+            var destination = document.getElementById("destination").value;
+            var numTravelers = parseInt(document.getElementById("num-travelers").value);
+            var tripDuration = parseInt(document.getElementById("trip-duration").value);
+            var budget = numTravelers * tripDuration * 500;
+            document.getElementById("budget-result").innerHTML = "Your estimated budget for " + destination + " is ₹" + budget;
+        }
+
+        // function calculateTransportationCosts() {
+        //     var distance = parseInt(document.getElementById("distance").value);
+        //     var fuelEfficiency = parseInt(document.getElementById("fuel-efficiency").value);
+        //     var fuelCost = parseInt(document.getElementById("fuel-cost").value);
+        //     var transportationCosts = (distance / fuelEfficiency) * fuelCost;
+        //     document.getElementById("transportation-costs-result").innerHTML = "Your estimated transportation costs are ₹" + transportationCosts;
+        // }
+
+        // function calculateAccommodationCosts() {
+        //     var numNights = parseInt(document.getElementById("num-nights").value);
+        //     var accommodationCost = parseInt(document.getElementById("accommodation-cost").value);
+        //     var accommodationCosts = numNights * accommodationCost;
+        //     document.getElementById("accommodation-costs-result").innerHTML = "Your estimated accommodation costs are ₹" + accommodationCosts;
+        // }
+
+        // function calculateFoodCosts() {
+        //     var foodCost = parseInt(document.getElementById("food-cost").value);
+        //     var numMeals = parseInt(document.getElementById("num-meals").value);
+        //     var foodCosts = foodCost * numMeals;
+        //     document.getElementById("food-costs-result").innerHTML = "Your estimated food costs are ₹" + foodCosts;
+        // }
+
+        function generateDestinations() {
+            var destinationsHtml = "";
+            for (let i = 0; i < destinations.length; i++) {
+                destinationsHtml += `
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="https://picsum.photos/200/300" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">₹{destinations[i].name}</h5>
+                                <p class="card-text">₹{destinations[i].description}</p>
+                                <button class="btn btn-primary" onclick="showDestinationInfo(₹{i})">More Info</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+            document.getElementById("destinations-container").innerHTML = destinationsHtml;
+        }
+
+        function showDestinationInfo(index) {
+            document.getElementById("destination-info").innerHTML = destinations[index].info;
+            $('#destinationModal').modal('show');
+        }
+
+        generateDestinations();
+    </script>
+    <script>
+        fetch('index.html')
+        .then(response => response.text()).then(data => {
+            document.getElementById('index').innerHTML = data;
+        });
+    </script>
+</body>
+</html>
